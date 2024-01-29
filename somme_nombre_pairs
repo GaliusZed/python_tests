@@ -1,0 +1,12 @@
+def somme_nombres_pairs(n):
+    somme = 0
+    for nombre in range(2, n+1, 2):
+        somme += nombre
+    return somme
+
+# Demander à l'utilisateur d'entrer un nombre
+nombre_limite = int(input("Entrez un nombre limite : "))
+
+# Calculer et afficher la somme des nombres pairs jusqu'au nombre limite
+resultat = somme_nombres_pairs(nombre_limite)
+print(f"La somme des nombres pairs jusqu'à {nombre_limite} est : {resultat}")
